@@ -1,0 +1,45 @@
+name: Update profile art
+
+# Refreshes the contribution graph SVG daily from real data.
+# Runs daily, plus whenever you push to main, plus on-demand.
+#
+# CONFIGURE: optionally set repository variable GH_PROFILE_USER (Settings >
+# Secrets and variables > Actions > Variables) to override the username.
+# If unset, it falls back to the default below (riskyakbar15).
+
+"on":
+  schedule:
+    - cron: "0 0 * * *" # 08:00 UTC+8 (00:00 UTC) every day
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  heatmap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Scrape real contribution data (no auth needed)
+        # env:
+        #   GH_PROFILE_USER: ${{ vars.GH_PROFILE_USER || 'riskyakbar15' }}
+        run: python scripts/fetch_contributions.py
+
+      - name: Render contribution graph SVG (boxes)
+        run: python scripts/render_heatmap_svg.py
+
+      - name: Commit updated art
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh contribution graph [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg"

@@ -1,0 +1,18 @@
+# Personal photo sources (input for ASCII portrait; SVG output is committed)
+source-photo.*
+source-prepped.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
