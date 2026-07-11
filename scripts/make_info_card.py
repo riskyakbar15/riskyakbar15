@@ -46,7 +46,7 @@ ACCENT = "#22d3ee"
 
 ROWS = [
     ("host",),
-    ("kv", "Now", "Concentration in Computer Networks and Cyber Security."),
+    ("kv", "Now", "Informatics Engineering Student"),
     ("kv", "Loc", "Makassar, Indonesia."),
     ("kv", "Edu", "S1, Informatics Engineering, '23."),
     ("gap",),
@@ -57,6 +57,7 @@ ROWS = [
     ("gap",),
     ("sec", "Highlights"),
     ("bul", "Just updated my portfolio website"),
+    ("bul", "Cybersecurity enthusiast, learning ethical hacking"),
     ("bul", "Currently learning about cloud computing and containerization"),
 ]
 
@@ -98,10 +99,14 @@ for i, row in enumerate(ROWS):
         continue
     if kind == "host":
         host = esc(HOST_NAME)
+        # header text is "<host>@github"; start the rule just past it so the
+        # line never overlaps the label regardless of HOST_NAME length
+        header_chars = len(HOST_NAME) + len("@github")
+        line_x = KEY_X + int(header_chars * 8.6) + 10
         inner = (f'<text x="{KEY_X}" y="{y:.1f}" font-size="14" font-weight="700">'
                  f'<tspan fill="{GREEN}">{host}</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
-                 f'<line x1="{KEY_X+96}" y1="{y-4:.1f}" x2="{W-PAD}" y2="{y-4:.1f}" '
+                 f'<line x1="{line_x}" y1="{y-4:.1f}" x2="{W-PAD}" y2="{y-4:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "sec":
         title = esc(row[1])
