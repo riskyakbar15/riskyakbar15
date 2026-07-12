@@ -45,7 +45,14 @@ SHARPEN = False
 WHITE_FLOOR = 0.80    # luminance above this is forced to blank (space)
 
 PAD = 20
-TITLEBAR_H = 30
+# portrait-ascii.svg is shown in the README at width=370 while its intrinsic
+# width is ~840 (scaled to ~44%), whereas info-card.svg is shown ~1:1. To make
+# the title bar text/dots DISPLAY at the same size as info-card's, the title bar
+# here is enlarged by ~2.3x (68/30, r=11, font 28) so 68*0.44 ~= 30px displayed.
+TITLEBAR_H = 68
+TITLE_FONT = 28
+DOT_R = 11
+DOT_GAP = 34
 STATUS_H = 30
 ART_W = COLS * CELL_W
 ART_H = ROWS * CELL_H
@@ -108,8 +115,8 @@ parts.append(f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" 
 
 parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>')
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
-    parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
-parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT_COLOR}" font-size="12" '
+    parts.append(f'<circle cx="{PAD + DOT_R + i*DOT_GAP}" cy="{TITLEBAR_H/2}" r="{DOT_R}" fill="{dotcol}"/>')
+parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + TITLE_FONT*0.35:.1f}" fill="{TITLE_TEXT_COLOR}" font-size="{TITLE_FONT}" '
              f'text-anchor="middle">{html.escape(TITLE_TEXT)}</text>')
 
 # one <text> per row (single color -> no per-char markup, tiny file)
@@ -144,10 +151,14 @@ for ry, line in enumerate(rows_txt):
 status_line_y = TITLEBAR_H + ART_H + PAD * 0.35
 status_y = status_line_y + 19
 whoami = html.escape(WHOAMI)
+STATUS_PREFIX = "server@github:~$ whoami "
+# place the blinking cursor just past the end of the full line so it never
+# overlaps the text, regardless of WHOAMI length (monospace ~7.8px/char @13px)
+cursor_x = PAD + (len(STATUS_PREFIX) + len(WHOAMI)) * 7.1 + 3
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
 parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT_COLOR}" font-size="13">'
-             f'you@github:~$ whoami <tspan fill="{INK}">{whoami}</tspan></text>')
-parts.append(f'<rect x="{PAD+196}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
+             f'{STATUS_PREFIX}<tspan fill="{INK}">{whoami}</tspan></text>')
+parts.append(f'<rect x="{cursor_x:.1f}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 

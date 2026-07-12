@@ -13,8 +13,6 @@
 </tr>
 </table>
 
-## riskyakbar15
-
 ## CyberSecurity · Networking
 
 <!-- add your own badges here -->
