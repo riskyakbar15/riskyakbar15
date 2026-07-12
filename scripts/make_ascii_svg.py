@@ -54,6 +54,9 @@ TITLE_FONT = 28
 DOT_R = 11
 DOT_GAP = 34
 STATUS_H = 30
+# corner radius; portrait displays at ~0.44x (370/840) in the README, so rx=28
+# shows ~12px on GitHub -- matching info-card's rx=12 at its ~1.0x display scale
+CORNER_R = 28
 ART_W = COLS * CELL_W
 ART_H = ROWS * CELL_H
 CANVAS_W = ART_W + PAD * 2
@@ -109,8 +112,8 @@ parts.append('<defs>'
              f'<stop offset="0" stop-color="{BG2}"/><stop offset="1" stop-color="{BG}"/>'
              f'</linearGradient></defs>')
 
-parts.append(f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="12" fill="url(#bg)"/>')
-parts.append(f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="12" '
+parts.append(f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="{CORNER_R}" fill="url(#bg)"/>')
+parts.append(f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="{CORNER_R}" '
              f'fill="none" stroke="{FRAME}" stroke-width="1"/>')
 
 parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>')

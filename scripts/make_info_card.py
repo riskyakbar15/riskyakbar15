@@ -27,7 +27,10 @@ TITLE_TEXT = "riskyakbar15@github: ~$ neofetch"
 # host line label (before the "@github")
 HOST_NAME = "riskyakbar15"
 
-W, H = 480, 376
+# W x H; H is sized so that at the README widths (portrait=370, info-card=490)
+# both SVGs DISPLAY at the same height on GitHub (~402px). portrait is 840x913
+# shown at 370 -> ~402px tall; info-card at 490 needs H ~= 394 to match.
+W, H = 480, 394
 PAD = 20
 TITLEBAR_H = 30
 KEY_X = PAD

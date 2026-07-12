@@ -13,8 +13,6 @@
 </tr>
 </table>
 
-## CyberSecurity · Networking
-
 <!-- add your own badges here -->
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-riskyakbar.my.id-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://riskyakbar.my.id/)
