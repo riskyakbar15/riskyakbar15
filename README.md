@@ -13,6 +13,7 @@
 </tr>
 </table>
 
+<br>
 <!-- add your own badges here -->
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-riskyakbar.my.id-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://riskyakbar.my.id/)
@@ -22,7 +23,7 @@
 <br>
 
 <!-- animated contribution graph: real data, boxes reveal cell by cell
-     (regenerated daily by .github/workflows/update-profile-art.yml) -->
+     (regenerated daily by .github/workflows/update-profile-art.yml) git pull --rebase -->
 <img src="./contrib-heatmap.svg" width="860" alt="GitHub contribution graph — auto-refreshed daily" />
 
 </div>
