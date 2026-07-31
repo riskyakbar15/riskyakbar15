@@ -54,6 +54,7 @@ TITLE_FONT = 28
 DOT_R = 11
 DOT_GAP = 34
 STATUS_H = 30
+STATUS_FONT = 16
 # corner radius; portrait displays at ~0.44x (370/840) in the README, so rx=28
 # shows ~12px on GitHub -- matching info-card's rx=12 at its ~1.0x display scale
 CORNER_R = 28
@@ -152,16 +153,15 @@ for ry, line in enumerate(rows_txt):
 
 # status bar with a steady blinking cursor
 status_line_y = TITLEBAR_H + ART_H + PAD * 0.35
-status_y = status_line_y + 19
+status_y = (status_line_y + CANVAS_H) / 2 + STATUS_FONT * 0.35
 whoami = html.escape(WHOAMI)
 STATUS_PREFIX = "server@github:~$ whoami "
-# place the blinking cursor just past the end of the full line so it never
-# overlaps the text, regardless of WHOAMI length (monospace ~7.8px/char @13px)
-cursor_x = PAD + (len(STATUS_PREFIX) + len(WHOAMI)) * 7.1 + 3
+char_w = STATUS_FONT * 0.546  # monospace advance at this font size
+cursor_x = PAD + (len(STATUS_PREFIX) + len(WHOAMI)) * char_w + 4
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
-parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT_COLOR}" font-size="13">'
+parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT_COLOR}" font-size="{STATUS_FONT}">'
              f'{STATUS_PREFIX}<tspan fill="{INK}">{whoami}</tspan></text>')
-parts.append(f'<rect x="{cursor_x:.1f}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
+parts.append(f'<rect x="{cursor_x:.1f}" y="{status_y - STATUS_FONT*0.8:.1f}" width="{STATUS_FONT*0.55:.1f}" height="{STATUS_FONT:.1f}" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 
