@@ -27,10 +27,9 @@ TITLE_TEXT = "riskyakbar15@github: ~$ neofetch"
 # host line label (before the "@github")
 HOST_NAME = "riskyakbar15"
 
-# W x H; H is sized so that at the README widths (portrait=370, info-card=490)
-# both SVGs DISPLAY at the same height on GitHub (~402px). portrait is 840x913
-# shown at 370 -> ~402px tall; info-card at 490 needs H ~= 394 to match.
-W, H = 480, 394
+# W x H; hero.svg scales this to the portrait height, so H just needs to fit
+# the ROWS content (keep H > printed content_bottom).
+W, H = 480, 420
 PAD = 20
 TITLEBAR_H = 30
 KEY_X = PAD
@@ -58,6 +57,9 @@ ROWS = [
     ("kv", "Backend", "Python, Node.js, FastAPI, Express"),
     ("kv", "Database", "MySQL, PostgreSQL, Prisma"),
     ("kv", "Cloud", "Oracle Cloud, Docker, Vercel"),
+    ("gap",),
+    ("sec", "Hobby"),
+    ("bul", "Vibe Coding, Coffee, Gaming, Anime"),
     ("gap",),
     ("sec", "Highlights"),
     ("bul", "Just updated my portfolio website"),
