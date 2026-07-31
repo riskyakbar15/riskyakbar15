@@ -20,7 +20,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-koktegesih-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/koktegesih)
 [![Email](https://img.shields.io/badge/Email-riskyakbar690-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:riskyakbar690@gmail.com)
 
-<br><br>
+<br>
 
 <code>$ cat stack.txt → languages • frameworks • databases • tools</code>
 
