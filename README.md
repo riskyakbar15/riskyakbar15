@@ -10,7 +10,7 @@
 
 <img src="./hero.svg" width="860" alt="ASCII portrait beside info card — experience, stack, highlights" />
 
-<br>
+<br><br>
 
 <code>$ whoami → developer • learner • cybersecurity enthusiast</code>
 
@@ -20,13 +20,13 @@
 [![Instagram](https://img.shields.io/badge/Instagram-koktegesih-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/koktegesih)
 [![Email](https://img.shields.io/badge/Email-riskyakbar690-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:riskyakbar690@gmail.com)
 
-<br>
+<br><br>
 
 <code>$ cat stack.txt → languages • frameworks • databases • tools</code>
 
 <img src="https://skillicons.dev/icons?i=react,nextjs,ts,python,nodejs,fastapi,express,mysql,postgres,prisma,docker,vercel&theme=dark" alt="Tech stack — React, Next.js, TypeScript, Python, Node.js, FastAPI, Express, MySQL, PostgreSQL, Prisma, Docker, Vercel" />
 
-<br>
+<br><br>
 
 <!-- animated contribution graph: real data, boxes reveal cell by cell
      (regenerated daily by .github/workflows/update-profile-art.yml) git pull --rebase -->
