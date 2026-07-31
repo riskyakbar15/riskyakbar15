@@ -10,8 +10,7 @@
 
 <img src="./hero.svg" width="860" alt="ASCII portrait beside info card — experience, stack, highlights" />
 
-<br>
-<!-- add your own badges here -->
+<code>$ whoami → developer • learner • cybersecurity enthusiast</code>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-riskyakbar.my.id-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://riskyakbar.my.id/)
 [![GitHub](https://img.shields.io/badge/GitHub-riskyakbar15-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/riskyakbar15)
