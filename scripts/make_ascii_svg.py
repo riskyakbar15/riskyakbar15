@@ -58,6 +58,8 @@ STATUS_FONT = 16
 # corner radius; portrait displays at ~0.44x (370/840) in the README, so rx=28
 # shows ~12px on GitHub -- matching info-card's rx=12 at its ~1.0x display scale
 CORNER_R = 28
+# border ~2.3px shows ~1px at portrait's 0.44x scale, matching info-card's 1px
+BORDER_W = 2.3
 ART_W = COLS * CELL_W
 ART_H = ROWS * CELL_H
 CANVAS_W = ART_W + PAD * 2
@@ -114,8 +116,8 @@ parts.append('<defs>'
              f'</linearGradient></defs>')
 
 parts.append(f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="{CORNER_R}" fill="url(#bg)"/>')
-parts.append(f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="{CORNER_R}" '
-             f'fill="none" stroke="{FRAME}" stroke-width="1"/>')
+parts.append(f'<rect x="{BORDER_W/2}" y="{BORDER_W/2}" width="{CANVAS_W-BORDER_W}" height="{CANVAS_H-BORDER_W}" rx="{CORNER_R}" '
+             f'fill="none" stroke="{FRAME}" stroke-width="{BORDER_W}"/>')
 
 parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>')
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
