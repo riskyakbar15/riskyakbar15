@@ -1,22 +1,22 @@
 {
   "username": "riskyakbar15",
-  "generated_at": "2026-07-31T02:35:20Z",
+  "generated_at": "2026-07-31T19:33:43Z",
   "range": {
     "start": "2025-07-27",
     "end": "2026-07-31"
   },
-  "total_contributions": 303,
-  "active_days": 82,
+  "total_contributions": 290,
+  "active_days": 78,
   "avg_per_active_day": 3.7,
   "current_streak": {
-    "length": 31,
-    "start": "2026-06-30",
-    "end": "2026-07-30"
+    "length": 26,
+    "start": "2026-07-06",
+    "end": "2026-07-31"
   },
   "longest_streak": {
-    "length": 31,
-    "start": "2026-06-30",
-    "end": "2026-07-30"
+    "length": 26,
+    "start": "2026-07-06",
+    "end": "2026-07-31"
   },
   "best_day": {
     "date": "2026-05-10",
@@ -69,7 +69,7 @@
     },
     {
       "month": "2026-06",
-      "total": 73
+      "total": 60
     },
     {
       "month": "2026-07",
@@ -1331,11 +1331,11 @@
     },
     {
       "date": "2026-06-05",
-      "count": 9
+      "count": 7
     },
     {
       "date": "2026-06-06",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-06-07",
@@ -1347,15 +1347,15 @@
     },
     {
       "date": "2026-06-09",
-      "count": 2
+      "count": 0
     },
     {
       "date": "2026-06-10",
-      "count": 6
+      "count": 0
     },
     {
       "date": "2026-06-11",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-06-12",
@@ -1363,7 +1363,7 @@
     },
     {
       "date": "2026-06-13",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-06-14",
@@ -1451,7 +1451,7 @@
     },
     {
       "date": "2026-07-05",
-      "count": 1
+      "count": 0
     },
     {
       "date": "2026-07-06",
@@ -1555,7 +1555,7 @@
     },
     {
       "date": "2026-07-31",
-      "count": 0
+      "count": 1
     }
   ]
 }
