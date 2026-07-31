@@ -7,7 +7,7 @@
      panel. regenerate portrait: python scripts/prep_photo.py <photo> &&
      python scripts/make_ascii_svg.py ; info panel: python scripts/make_info_card.py -->
 
-<img src="./portrait-ascii.svg" width="334" alt="ASCII portrait" /> <img src="./info-card.svg" width="441" alt="Info card — experience, stack, highlights" />
+<img src="./portrait-ascii.svg" width="336" alt="ASCII portrait" /> <img src="./info-card.svg" width="443" alt="Info card — experience, stack, highlights" />
 
 <br>
 <!-- add your own badges here -->
