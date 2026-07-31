@@ -4,10 +4,11 @@
 <div align="center">
 
 <!-- hero: monochrome ASCII portrait (types in) beside a neofetch-style info
-     panel. regenerate portrait: python scripts/prep_photo.py <photo> &&
-     python scripts/make_ascii_svg.py ; info panel: python scripts/make_info_card.py -->
+     panel, combined into ONE svg so it never wraps. regenerate portrait:
+     python scripts/prep_photo.py <photo> && python scripts/make_ascii_svg.py ;
+     info panel: python scripts/make_info_card.py ; then: python scripts/make_hero.py -->
 
-<img src="./portrait-ascii.svg" width="366" alt="ASCII portrait" /><img src="./info-card.svg" width="485" alt="Info card — experience, stack, highlights" />
+<img src="./hero.svg" width="860" alt="ASCII portrait beside info card — experience, stack, highlights" />
 
 <br>
 <!-- add your own badges here -->
