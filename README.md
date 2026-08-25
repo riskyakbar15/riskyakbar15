@@ -24,7 +24,7 @@
 
 <code>$ cat stack.txt → languages • frameworks • databases • tools</code>
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,ts,python,nodejs,fastapi,express,mysql,postgres,prisma,docker,vercel&theme=dark" alt="Tech stack — React, Next.js, TypeScript, Python, Node.js, FastAPI, Express, MySQL, PostgreSQL, Prisma, Docker, Vercel" />
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,ts,python,nodejs,fastapi,express,mysql,postgres,prisma,docker,vercel&theme=dark" alt="Tech stack — React, Next.js, TypeScript, Python, Node.js, FastAPI, Express, MySQL, PostgreSQL, Prisma, Docker, Vercel" />
 
 <br><br>
 
