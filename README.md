@@ -17,7 +17,6 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-riskyakbar.my.id-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://riskyakbar.my.id/)
 [![GitHub](https://img.shields.io/badge/GitHub-riskyakbar15-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/riskyakbar15)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-riskyakbar15-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/riskyakbar15)
-[![Instagram](https://img.shields.io/badge/Instagram-koktegesih-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/koktegesih)
 [![Email](https://img.shields.io/badge/Email-riskyakbar-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact.riskyakbar@gmail.com)
 
 <br>
