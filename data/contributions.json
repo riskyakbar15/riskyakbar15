@@ -1,32 +1,28 @@
 {
   "username": "riskyakbar15",
-  "generated_at": "2026-10-03T03:46:23Z",
+  "generated_at": "2026-10-04T04:16:43Z",
   "range": {
-    "start": "2025-09-28",
+    "start": "2025-10-05",
+    "end": "2026-10-04"
+  },
+  "total_contributions": 545,
+  "active_days": 138,
+  "avg_per_active_day": 3.9,
+  "current_streak": {
+    "length": 90,
+    "start": "2026-07-06",
     "end": "2026-10-03"
   },
-  "total_contributions": 544,
-  "active_days": 137,
-  "avg_per_active_day": 4.0,
-  "current_streak": {
-    "length": 89,
-    "start": "2026-07-06",
-    "end": "2026-10-02"
-  },
   "longest_streak": {
-    "length": 89,
+    "length": 90,
     "start": "2026-07-06",
-    "end": "2026-10-02"
+    "end": "2026-10-03"
   },
   "best_day": {
     "date": "2026-08-01",
     "count": 36
   },
   "monthly": [
-    {
-      "month": "2025-09",
-      "total": 0
-    },
     {
       "month": "2025-10",
       "total": 0
@@ -77,38 +73,10 @@
     },
     {
       "month": "2026-10",
-      "total": 2
+      "total": 3
     }
   ],
   "days": [
-    {
-      "date": "2025-09-28",
-      "count": 0
-    },
-    {
-      "date": "2025-09-29",
-      "count": 0
-    },
-    {
-      "date": "2025-09-30",
-      "count": 0
-    },
-    {
-      "date": "2025-10-01",
-      "count": 0
-    },
-    {
-      "date": "2025-10-02",
-      "count": 0
-    },
-    {
-      "date": "2025-10-03",
-      "count": 0
-    },
-    {
-      "date": "2025-10-04",
-      "count": 0
-    },
     {
       "date": "2025-10-05",
       "count": 0
@@ -1563,6 +1531,10 @@
     },
     {
       "date": "2026-10-03",
+      "count": 1
+    },
+    {
+      "date": "2026-10-04",
       "count": 0
     }
   ]
